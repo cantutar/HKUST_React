@@ -1,0 +1,16 @@
+header {
+  background-color: #9574cd !important;
+  margin-top: 50px !important;
+  z-index: 0;
+}
+
+footer {
+  background-color: #d1c4e9 !important;
+}
+
+.bg-dark {
+  background-color: #512da8 !important;
+}
+.card-header {
+  background-color: #fcc02f !important;
+}
