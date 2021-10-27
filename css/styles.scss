@@ -6,6 +6,10 @@ $background-pale: #d1c4e9;
 // Height variables
 $carousel-item-height: 300px;
 
+@mixin makeItWhite($color) {
+  color: $color !important;
+}
+
 @mixin zero-margin($pad-up-dn, $pad-left-right) {
   margin: 0px auto;
   padding: $pad-up-dn $pad-left-right;
@@ -73,4 +77,22 @@ body {
   position: absolute;
   bottom: 0px;
   z-index: 1;
+}
+
+.modal-header {
+  background-color: $background-dark;
+  .modal-title {
+    @include makeItWhite(white);
+  }
+}
+
+.modal-body {
+  background-color: $background-pale;
+}
+
+.modal-footer {
+  background-color: $background-pale;
+}
+.close {
+  @include makeItWhite(white);
 }
